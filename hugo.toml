@@ -1,0 +1,32 @@
+baseURL = 'https://investmuse.io/blog'
+languageCode = 'en-us'
+title = 'InvestMuse Blog'
+theme = 'PaperMod'
+
+[params]
+  [params.homeInfoParams]
+    Title = "InvestMuse Blog"
+    Content = "Professional investment analysis insights, tips, and market intelligence"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/InvestMuseIO"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/company/investmuse"
+
+[[menu.main]]
+  identifier = "home"
+  name = "InvestMuse App"
+  url = "https://investmuse.io"
+  weight = 10
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 20
+
+[markup.goldmark.renderer]
+  unsafe = true

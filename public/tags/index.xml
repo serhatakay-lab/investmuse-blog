@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on InvestMuse Blog</title>
+    <link>http://localhost:8080/tags/</link>
+    <description>Recent content in Tags on InvestMuse Blog</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Sep 2025 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:8080/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:8080/tags/ai/</link>
+      <pubDate>Thu, 04 Sep 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:8080/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Analysis</title>
+      <link>http://localhost:8080/tags/analysis/</link>
+      <pubDate>Thu, 04 Sep 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:8080/tags/analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fintech</title>
+      <link>http://localhost:8080/tags/fintech/</link>
+      <pubDate>Thu, 04 Sep 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:8080/tags/fintech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Investing</title>
+      <link>http://localhost:8080/tags/investing/</link>
+      <pubDate>Thu, 04 Sep 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:8080/tags/investing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technical-Analysis</title>
+      <link>http://localhost:8080/tags/technical-analysis/</link>
+      <pubDate>Thu, 04 Sep 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:8080/tags/technical-analysis/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
