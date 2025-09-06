@@ -4,6 +4,8 @@ title = 'InvestMuse Blog'
 theme = 'PaperMod'
 
 [params]
+  assets.customCSS = ["css/extended.css"]
+  
   [params.homeInfoParams]
     Title = "InvestMuse Blog"
     Content = "Professional investment analysis insights, tips, and market intelligence"
