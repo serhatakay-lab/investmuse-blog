@@ -30,6 +30,3 @@ theme = 'PaperMod'
 
 [markup.goldmark.renderer]
   unsafe = true
-
-[params]
-  assets.customCSS = ["css/custom.css"]
