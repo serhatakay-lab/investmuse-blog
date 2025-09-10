@@ -7,6 +7,9 @@ theme = 'clarity'
   brand = "InvestMuse"
   introDescription = "Professional investment analysis insights, tips, and market intelligence"
   logo = "/images/logo.png"
+
+[params]
+  customCSS = ["sass/_custom.scss"]
   
 [menu]
   [[menu.main]]

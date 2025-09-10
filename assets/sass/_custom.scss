@@ -1,0 +1,59 @@
+// InvestMuse Brand Colors
+$primary-color: #00B8A9;
+$primary-hover: #008a7d;
+$accent-color: #00B8A9;
+
+// Override theme colors
+:root {
+  --color-mode: 'lit';
+  --color-primary: #{$primary-color};
+  --color-primary-alpha: #{$primary-color}88;
+  --color-secondary: #{$primary-hover};
+  --text-color: #333;
+  --bg-color: #F6F6F6;
+  --card-bg: white;
+}
+
+// Header customization
+.nav_brand {
+  color: var(--color-primary) !important;
+}
+
+.nav__list a {
+  color: var(--color-primary) !important;
+  
+  &:hover {
+    color: var(--color-secondary) !important;
+  }
+}
+
+// Button styling
+.btn {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  
+  &:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }
+}
+
+// Tags styling
+.tags a {
+  background-color: var(--color-primary);
+  
+  &:hover {
+    background-color: var(--color-secondary);
+  }
+}
+
+// Card styling to match your main site
+.post_card {
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 184, 169, 0.1);
+  
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 184, 169, 0.15);
+  }
+}
