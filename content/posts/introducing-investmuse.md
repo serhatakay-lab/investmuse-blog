@@ -7,6 +7,32 @@ tags: ["investing", "AI", "analysis", "fintech", "technical-analysis"]
 categories: ["Product Features", "Investment Technology"]
 ---
 
+<style>
+.content {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1.5rem auto !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content em {
+    display: block !important;
+    text-align: center !important;
+    font-style: italic !important;
+    color: #666 !important;
+    margin: 0.5rem auto 1.5rem auto !important;
+    font-size: 0.9rem !important;
+}
+</style>
+
 # The Problem Every Investor Faces
 
 Sarah, a marketing manager with a growing investment portfolio, starts her day like millions of other investors worldwide. She opens her laptop, checks the market, and immediately feels overwhelmed. TradingView shows her charts, but interpreting the technical indicators requires expertise she doesn't have. Financial news websites flood her with conflicting opinions. Yahoo Finance displays basic numbers, but connecting the dots between a company's financial health and its investment potential feels like solving a puzzle with missing pieces.
