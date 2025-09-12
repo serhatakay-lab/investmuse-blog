@@ -1,51 +1,29 @@
-/* Force InvestMuse teal colors with higher specificity */
-:root {
+/* Nuclear option - override everything */
+* {
   --color-primary: #00B8A9 !important;
-  --color-secondary: #008a7d !important;
-  --accent-color: #00B8A9 !important;
-  --link-color: #00B8A9 !important;
+  --primary: #00B8A9 !important;
+  --accent: #00B8A9 !important;
 }
 
-/* Override all button colors */
-.btn, .btn-primary, button, [type="button"], input[type="submit"] {
+body .btn, body .btn-primary, body button[type="submit"] {
   background-color: #00B8A9 !important;
   border-color: #00B8A9 !important;
   color: white !important;
 }
 
-.btn:hover, .btn-primary:hover, button:hover {
-  background-color: #008a7d !important;
-  border-color: #008a7d !important;
-}
-
-/* Override tag colors */
-.tags a, .tag, .badge {
+body .tags a, body .tag, body .badge {
   background-color: #00B8A9 !important;
   color: white !important;
 }
 
-/* Override link colors */
-a, a:link, a:visited {
+/* Force override Clarity's blue */
+.text-primary, .btn-primary, .badge-primary {
   color: #00B8A9 !important;
+  background-color: #00B8A9 !important;
 }
 
-a:hover, a:active {
-  color: #008a7d !important;
-}
-
-/* Header improvements */
-header, .header {
-  background-color: #1a3d3e !important;
-}
-
-.nav_brand, .navbar-brand {
+/* Override any blue colors */
+[style*="color: blue"], [style*="background-color: blue"] {
   color: #00B8A9 !important;
-}
-
-/* Fix images in posts */
-.post img, article img, .content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
+  background-color: #00B8A9 !important;
 }
