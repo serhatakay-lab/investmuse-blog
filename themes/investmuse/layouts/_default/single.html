@@ -21,7 +21,7 @@
 /* More aggressive image control */
 .content img {
     max-width: calc(100vw - 40px) !important; /* Account for padding */
-    width: auto !important;
+    width: 100% !important;
     height: auto !important;
     display: block !important;
     margin: 1.5rem auto !important;
@@ -36,6 +36,22 @@
 .content p {
     max-width: 100% !important;
     box-sizing: border-box !important;
+}
+
+/* Add this to your existing CSS */
+.content img + em,
+.content p em {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Ensure proper text encoding */
+.content {
+    text-rendering: optimizeLegibility;
 }
 
 /* Override any inline styles on images */
