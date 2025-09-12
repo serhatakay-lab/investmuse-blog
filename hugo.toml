@@ -9,7 +9,7 @@ theme = 'clarity'
   logo = "/images/logo.png"
 
 [params]
-  customCSS = ["sass/_custom.scss"]
+  customCSS = ["css/_custom.css"]
   
 [menu]
   [[menu.main]]
@@ -20,3 +20,10 @@ theme = 'clarity'
     name = "About"
     url = "/about/"
     weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.asciidocExt]
+    [markup.asciidocExt.attributes]

@@ -1,0 +1,34 @@
+:root {
+  --color-primary: #00B8A9;
+  --color-secondary: #008a7d;
+  --bg-color: #F6F6F6;
+}
+
+header {
+  background-color: #1a3d3e !important;
+}
+
+.nav_brand {
+  color: var(--color-primary) !important;
+}
+
+.nav__list a {
+  color: white !important;
+}
+
+.nav__list a:hover {
+  color: var(--color-primary) !important;
+}
+
+.btn, .btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.tags a {
+  background-color: var(--color-primary) !important;
+}
+
+body {
+  background-color: var(--bg-color);
+}
