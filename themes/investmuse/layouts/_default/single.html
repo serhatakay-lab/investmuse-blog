@@ -18,10 +18,10 @@
     box-sizing: border-box;
 }
 
-/* Make images fill full content width */
+/* Nuclear approach - force all images to full width */
 .content img {
-    max-width: 100% !important;
-    width: 100% !important;           /* Fill the full 750px width */
+    width: 750px !important;        /* Force exact width */
+    max-width: none !important;     /* Remove max-width constraint */
     height: auto !important;
     display: block !important;
     margin: 1.5rem auto !important;
@@ -29,35 +29,42 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Force container constraint for all elements */
-.content *,
-.content figure,
-.content p {
-    max-width: 100% !important;
-    box-sizing: border-box !important;
+/* Target captions specifically - text that comes right after images */
+.content p:has(img) + p em,
+.content img + p em,
+.content p em:only-child {
+    display: block !important;
+    text-align: center !important;
+    font-style: italic !important;
+    color: #666 !important;
+    margin: -1rem auto 2rem auto !important;
+    font-size: 0.9rem !important;
+    max-width: 750px !important;
 }
 
-/* Override any inline styles on images */
-.content img[style] {
-    width: 100% !important;           /* Force full width even with inline styles */
-    max-width: 100% !important;
-}
-
-/* Fix image captions */
-.content img + em,
-.content p em {
+/* Alternative caption targeting */
+.content em {
     display: block;
     text-align: center;
     font-style: italic;
     color: #666;
-    margin-top: 0.5rem;
+    margin: 0.5rem auto 1.5rem auto;
     font-size: 0.9rem;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .content {
-        padding: 0 15px;
+/* Override any conflicting styles */
+.content * {
+    box-sizing: border-box;
+}
+
+/* Mobile responsive */
+@media (max-width: 790px) {
+    .content img {
+        width: calc(100vw - 40px) !important;
+    }
+    
+    .content em {
+        max-width: calc(100vw - 40px) !important;
     }
 }
 </style>
