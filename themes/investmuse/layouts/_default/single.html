@@ -14,20 +14,19 @@
     max-width: 750px;
     margin: 0 auto;
     overflow-x: hidden;
-    padding: 0 20px; /* Add padding for mobile */
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
-/* More aggressive image control */
+/* Make images fill full content width */
 .content img {
-    max-width: calc(100vw - 40px) !important; /* Account for padding */
-    width: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;           /* Fill the full 750px width */
     height: auto !important;
     display: block !important;
     margin: 1.5rem auto !important;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    object-fit: contain !important;
 }
 
 /* Force container constraint for all elements */
@@ -38,7 +37,13 @@
     box-sizing: border-box !important;
 }
 
-/* Add this to your existing CSS */
+/* Override any inline styles on images */
+.content img[style] {
+    width: 100% !important;           /* Force full width even with inline styles */
+    max-width: 100% !important;
+}
+
+/* Fix image captions */
 .content img + em,
 .content p em {
     display: block;
@@ -49,25 +54,10 @@
     font-size: 0.9rem;
 }
 
-/* Ensure proper text encoding */
-.content {
-    text-rendering: optimizeLegibility;
-}
-
-/* Override any inline styles on images */
-.content img[style] {
-    width: auto !important;
-    max-width: calc(100vw - 40px) !important;
-}
-
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .content {
         padding: 0 15px;
-    }
-    
-    .content img {
-        max-width: calc(100vw - 30px) !important;
     }
 }
 </style>
