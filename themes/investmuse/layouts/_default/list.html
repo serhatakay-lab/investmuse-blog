@@ -4,7 +4,7 @@
 </div>
 
 {{ range .Pages }}
-{{ if and (not .Draft) (not (in .Title "Lorem")) (not (in .Title "Post")) (not (in .Title "Sample")) }}
+{{ if not .Draft }}
 <article style="margin-bottom: 2rem; padding: 1.5rem; border-left: 4px solid #00B8A9; background: #f9f9f9;">
     <h2><a href="{{ .Permalink }}" style="text-decoration: none; color: #00B8A9;">{{ .Title }}</a></h2>
     <p style="color: #666; margin-bottom: 1rem;">{{ .Date.Format "January 2, 2006" }} • {{ .ReadingTime }} min read</p>
