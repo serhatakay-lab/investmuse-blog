@@ -1,6 +1,21 @@
 {{ define "main" }}
 <article>
     <h1>{{ .Title }}</h1>
-    <div>{{ .Content }}</div>
+    <p style="color: #666; margin-bottom: 2rem;">{{ .Date.Format "January 2, 2006" }} • {{ .ReadingTime }} min read</p>
+    <div style="line-height: 1.6;">
+        {{ .Content }}
+    </div>
 </article>
+
+<style>
+/* Fix image sizing */
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+</style>
 {{ end }}
