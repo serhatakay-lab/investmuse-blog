@@ -13,30 +13,30 @@
 /* Content container */
 .content {
     line-height: 1.6;
-    max-width: 750px;   /* readable width */
-    margin: 0 auto;     /* center */
+    max-width: 750px;   /* constrain readable width */
+    margin: 0 auto;     /* center horizontally */
     overflow-x: hidden;
 }
 
-/* Force all images inside .content */
+/* Force all images inside .content to scale properly */
 .content img,
 .content p img,
 .content figure img,
 .content .figure img {
-    max-width: 100% !important;   /* never exceed container */
-    width: 100% !important;       /* always fill container */
-    height: auto !important;
+    max-width: 100% !important;   /* never exceed container width */
+    width: auto !important;       /* scale naturally */
+    height: auto !important;      /* preserve aspect ratio */
     display: block !important;
     margin: 1.5rem auto !important;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain !important; /* ensure large images shrink to fit */
 }
 
-/* Fix figure wrapper */
+/* Keep figure wrapper aligned */
 .content figure,
 .content .figure {
     max-width: 100% !important;
-    width: 100% !important;
     margin: 1.5rem auto !important;
     text-align: center;
 }
