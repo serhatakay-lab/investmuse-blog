@@ -9,59 +9,32 @@
     </div>
 </article>
 <style>
+/* Debug borders to see actual dimensions */
 .content {
     line-height: 1.6;
     max-width: 750px;
     margin: 0 auto;
-    overflow-x: hidden;
     padding: 0 20px;
     box-sizing: border-box;
+    border: 5px solid red !important; /* DEBUG: see content area */
 }
 
-/* Nuclear approach - force all images to full width */
+/* Very specific image targeting with debug border */
+article .content img,
+.content > p > img,
 .content img {
-    width: 750px !important;        /* Force exact width */
-    max-width: none !important;     /* Remove max-width constraint */
+    width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
     display: block !important;
     margin: 1.5rem auto !important;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid blue !important; /* DEBUG: see image area */
+    box-sizing: border-box !important;
 }
 
-/* Target captions specifically - text that comes right after images */
-.content p:has(img) + p em,
-.content img + p em,
-.content p em:only-child {
-    display: block !important;
-    text-align: center !important;
-    font-style: italic !important;
-    color: #666 !important;
-    margin: -1rem auto 2rem auto !important;
-    font-size: 0.9rem !important;
-    max-width: 750px !important;
-}
-
-/* Alternative caption targeting */
-.content em {
-    display: block;
-    text-align: center;
-    font-style: italic;
-    color: #666;
-    margin: 0.5rem auto 1.5rem auto;
-    font-size: 0.9rem;
-}
-
-/* Override any conflicting styles */
+/* Debug: see all elements */
 .content * {
-    box-sizing: border-box;
-}
-
-/* Mobile responsive */
-@media (max-width: 790px) {
-    .content {
-        padding: 0 15px;
-    }
+    outline: 1px solid yellow;
 }
 </style>
 {{ end }}
