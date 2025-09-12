@@ -1,34 +1,51 @@
+/* Force InvestMuse teal colors with higher specificity */
 :root {
-  --color-primary: #00B8A9;
-  --color-secondary: #008a7d;
-  --bg-color: #F6F6F6;
+  --color-primary: #00B8A9 !important;
+  --color-secondary: #008a7d !important;
+  --accent-color: #00B8A9 !important;
+  --link-color: #00B8A9 !important;
 }
 
-header {
-  background-color: #1a3d3e !important;
-}
-
-.nav_brand {
-  color: var(--color-primary) !important;
-}
-
-.nav__list a {
+/* Override all button colors */
+.btn, .btn-primary, button, [type="button"], input[type="submit"] {
+  background-color: #00B8A9 !important;
+  border-color: #00B8A9 !important;
   color: white !important;
 }
 
-.nav__list a:hover {
-  color: var(--color-primary) !important;
+.btn:hover, .btn-primary:hover, button:hover {
+  background-color: #008a7d !important;
+  border-color: #008a7d !important;
 }
 
-.btn, .btn-primary {
-  background-color: var(--color-primary) !important;
-  border-color: var(--color-primary) !important;
+/* Override tag colors */
+.tags a, .tag, .badge {
+  background-color: #00B8A9 !important;
+  color: white !important;
 }
 
-.tags a {
-  background-color: var(--color-primary) !important;
+/* Override link colors */
+a, a:link, a:visited {
+  color: #00B8A9 !important;
 }
 
-body {
-  background-color: var(--bg-color);
+a:hover, a:active {
+  color: #008a7d !important;
+}
+
+/* Header improvements */
+header, .header {
+  background-color: #1a3d3e !important;
+}
+
+.nav_brand, .navbar-brand {
+  color: #00B8A9 !important;
+}
+
+/* Fix images in posts */
+.post img, article img, .content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 }
