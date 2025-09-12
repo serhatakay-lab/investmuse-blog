@@ -1,29 +1,48 @@
 baseURL = 'https://investmuse.io/blog'
 languageCode = 'en-us'
 title = 'InvestMuse Blog'
-theme = 'clarity'
+theme = 'hermit'
 
 [params]
-  brand = "InvestMuse"
-  introDescription = "Professional investment analysis insights, tips, and market intelligence"
-  logo = "/images/logo.png"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
 
-[params]
-  customCSS = ["css/_custom.css"]
-  
+  # Metadata mostly used in document's head
+  description = "Professional investment analysis insights, tips, and market intelligence"
+  keywords = "investment, analysis, AI, fintech, trading"
+  images = [""]
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  gitUrl = "https://github.com/serhatakay-lab/investmuse-blog/commit/"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable theme toggle
+  enableThemeToggle = true
+
+  # Customize colors - InvestMuse teal theme
+  themeColor = "#00B8A9"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/InvestMuseIO"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://linkedin.com/company/investmuse"
+
 [menu]
   [[menu.main]]
+    identifier = "investmuse"
     name = "InvestMuse App"
     url = "https://investmuse.io"
-    weight = 1
-  [[menu.main]]  
-    name = "About"
-    url = "/about/"
-    weight = 2
+    weight = 10
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.asciidocExt]
-    [markup.asciidocExt.attributes]

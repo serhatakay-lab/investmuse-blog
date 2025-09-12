@@ -1,0 +1,25 @@
+/* InvestMuse brand colors for Hermit theme */
+:root {
+  --accent: #00B8A9;
+  --background: #F6F6F6;
+  --color: #333;
+  --border-color: #00B8A9;
+}
+
+/* Custom styling */
+.main {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 2rem;
+}
+
+.post-title a {
+  color: var(--accent);
+}
+
+.button, .readmore {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
