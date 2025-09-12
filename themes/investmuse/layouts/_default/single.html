@@ -10,20 +10,32 @@
 </article>
 
 <style>
+/* Content container */
 .content {
     line-height: 1.6;
-    max-width: 750px;     /* constrain content width */
-    margin: 0 auto;       /* center the content */
+    max-width: 750px;   /* fixed readable width for text + images */
+    margin: 0 auto;     /* center horizontally */
     overflow-x: hidden;
 }
 
-.content img {
-    max-width: 100%;      /* match the content width */
-    height: auto;
+/* Force all images inside content to match width */
+.content img,
+.content p img,
+.content figure img {
+    max-width: 100% !important;  /* no wider than content */
+    width: 100% !important;      /* exactly as wide as content */
+    height: auto !important;     /* keep aspect ratio */
     display: block;
     margin: 1.5rem auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure figure wrapper stays aligned */
+.content figure {
+    max-width: 100%;
+    margin: 1.5rem auto;
+    text-align: center;
 }
 </style>
 {{ end }}
