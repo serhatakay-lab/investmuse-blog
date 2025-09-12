@@ -13,28 +13,31 @@
 /* Content container */
 .content {
     line-height: 1.6;
-    max-width: 750px;   /* fixed readable width for text + images */
-    margin: 0 auto;     /* center horizontally */
+    max-width: 750px;   /* readable width */
+    margin: 0 auto;     /* center */
     overflow-x: hidden;
 }
 
-/* Force all images inside content to match width */
+/* Force all images inside .content */
 .content img,
 .content p img,
-.content figure img {
-    max-width: 100% !important;  /* no wider than content */
-    width: 100% !important;      /* exactly as wide as content */
-    height: auto !important;     /* keep aspect ratio */
-    display: block;
-    margin: 1.5rem auto;
+.content figure img,
+.content .figure img {
+    max-width: 100% !important;   /* never exceed container */
+    width: 100% !important;       /* always fill container */
+    height: auto !important;
+    display: block !important;
+    margin: 1.5rem auto !important;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure figure wrapper stays aligned */
-.content figure {
-    max-width: 100%;
-    margin: 1.5rem auto;
+/* Fix figure wrapper */
+.content figure,
+.content .figure {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 1.5rem auto !important;
     text-align: center;
 }
 </style>
