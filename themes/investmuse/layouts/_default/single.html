@@ -1,40 +1,64 @@
 {{ define "main" }}
 <article>
-    <h1>{{ .Title }}</h1>
-    <p style="color: #666; margin-bottom: 2rem;">
-        {{ .Date.Format "January 2, 2006" }} • {{ .ReadingTime }} min read
-    </p>
-    <div class="content">
-        {{ .Content }}
-    </div>
+  <h1>{{ .Title }}</h1>
+  <p style="color: #666; margin-bottom: 2rem;">
+    {{ .Date.Format "January 2, 2006" }} • {{ .ReadingTime }} min read
+  </p>
+  <div class="content">
+    {{ .Content }}
+  </div>
 </article>
+
 <style>
-/* Debug borders to see actual dimensions */
+/* Content Layout */
 .content {
-    line-height: 1.6;
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-    border: 5px solid red !important; /* DEBUG: see content area */
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Very specific image targeting with debug border */
-article .content img,
-.content > p > img,
+/* Figure Layout */
+.content figure {
+  margin: 1.5rem auto !important;
+  text-align: center !important;
+  max-width: 100% !important;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Image Styling */
 .content img {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    margin: 1.5rem auto !important;
-    border: 5px solid blue !important; /* DEBUG: see image area */
-    box-sizing: border-box !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Debug: see all elements */
-.content * {
-    outline: 1px solid yellow;
+/* Caption Styling */
+.content figcaption {
+  display: block !important;
+  text-align: center !important;
+  font-style: italic !important;
+  color: #666 !important;
+  margin: 0.5rem auto 0 auto !important;
+  font-size: 0.9rem !important;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0 15px;
+  }
+
+  /* Ensure images are responsive and fit within the content container */
+  .content img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }
 </style>
+
 {{ end }}
+
