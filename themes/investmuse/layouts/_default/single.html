@@ -22,20 +22,19 @@
   margin: 1.5rem auto !important;
   text-align: center !important;
   max-width: 100% !important;
-  display: inline-block;
-  width: 100%;
 }
 
-/* Image Styling */
+/* Image Styling - Apply height constraint globally */
 .content img {
-  width: auto !important;        /* Allow width to adjust based on max height */
+  width: auto !important;
   height: auto !important;
   display: block !important;
   margin: 0 auto !important;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  object-fit: contain !important; /* Maintain aspect ratio */
-  max-height: 60vh !important;    /* Limit height to 60% of viewport height */
+  object-fit: contain !important;
+  max-height: 60vh !important;
+  max-width: 100% !important;
 }
 
 /* Caption Styling */
@@ -53,17 +52,7 @@
   .content {
     padding: 0 15px;
   }
-
-  /* Ensure images are responsive and fit within the content container */
-  .content img {
-    max-width: 100% !important;
-    width: auto !important;      /* Let width adjust automatically */
-    max-height: 60vh !important; /* Limit height to prevent images from being too tall */
-    object-fit: contain !important; /* Maintain aspect ratio */
-  }
 }
 </style>
 
 {{ end }}
-
-<!-- Force rebuild -->
