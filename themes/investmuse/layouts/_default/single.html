@@ -8,28 +8,37 @@
     {{ .Content }}
   </div>
 </article>
+
 <style>
+/* Content Layout */
 .content {
   max-width: 750px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/* Figure Layout */
 .content figure {
   margin: 1.5rem auto !important;
   text-align: center !important;
   max-width: 100% !important;
+  display: inline-block;
+  width: 100%;
 }
 
+/* Image Styling */
 .content img {
-  width: 100% !important;
+  width: auto !important;        /* Allow width to adjust based on max height */
   height: auto !important;
   display: block !important;
   margin: 0 auto !important;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  object-fit: contain !important; /* Maintain aspect ratio */
+  max-height: 60vh !important;    /* Limit height to 60% of viewport height */
 }
 
+/* Caption Styling */
 .content figcaption {
   display: block !important;
   text-align: center !important;
@@ -39,18 +48,21 @@
   font-size: 0.9rem !important;
 }
 
-/* Mobile optimization - limit image height */
+/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   .content {
     padding: 0 15px;
   }
-  
+
+  /* Ensure images are responsive and fit within the content container */
   .content img {
-    max-height: 60vh !important;  /* Limit height to 60% of viewport */
-    width: auto !important;       /* Let width adjust to maintain aspect ratio */
-    max-width: 100% !important;   /* Don't exceed container width */
-    object-fit: contain !important;
+    max-width: 100% !important;
+    width: auto !important;      /* Let width adjust automatically */
+    max-height: 60vh !important; /* Limit height to prevent images from being too tall */
+    object-fit: contain !important; /* Maintain aspect ratio */
   }
 }
 </style>
+
 {{ end }}
+
