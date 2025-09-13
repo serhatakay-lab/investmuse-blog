@@ -8,25 +8,19 @@
     {{ .Content }}
   </div>
 </article>
-
 <style>
-/* Content Layout */
 .content {
   max-width: 750px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Figure Layout */
 .content figure {
   margin: 1.5rem auto !important;
   text-align: center !important;
   max-width: 100% !important;
-  display: inline-block;
-  width: 100%;
 }
 
-/* Image Styling */
 .content img {
   width: 100% !important;
   height: auto !important;
@@ -36,7 +30,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Caption Styling */
 .content figcaption {
   display: block !important;
   text-align: center !important;
@@ -46,19 +39,18 @@
   font-size: 0.9rem !important;
 }
 
-/* Mobile responsiveness */
+/* Mobile optimization - limit image height */
 @media screen and (max-width: 768px) {
   .content {
     padding: 0 15px;
   }
-
-  /* Ensure images are responsive and fit within the content container */
+  
   .content img {
-    max-width: 100% !important;
-    width: 100% !important;
+    max-height: 60vh !important;  /* Limit height to 60% of viewport */
+    width: auto !important;       /* Let width adjust to maintain aspect ratio */
+    max-width: 100% !important;   /* Don't exceed container width */
+    object-fit: contain !important;
   }
 }
 </style>
-
 {{ end }}
-
