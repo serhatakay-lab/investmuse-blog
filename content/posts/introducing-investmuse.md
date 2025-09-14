@@ -1,4 +1,38 @@
 ---
+
+<style>
+img {
+  max-height: 60vh !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+figcaption {
+  text-align: center !important;
+  font-style: italic !important;
+  color: #666 !important;
+  margin: 0.5rem auto 1.5rem auto !important;
+  font-size: 0.9rem !important;
+}
+</style>
+
+
+<style>
+img {
+  max-height: 60vh !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+figcaption {
+  text-align: center !important;
+  font-style: italic !important;
+  color: #666 !important;
+  margin: 0.5rem auto 1.5rem auto !important;
+  font-size: 0.9rem !important;
+}
+</style>
+
 title: "How InvestMuse Transforms Investment Analysis: From Daily Hot Picks to AI-Powered Financial Insights"
 date: 2025-09-04T10:00:00Z
 draft: false
@@ -6,6 +40,40 @@ description: "The story of how cutting-edge technology meets investment intellig
 tags: ["investing", "AI", "analysis", "fintech", "technical-analysis"]
 categories: ["Product Features", "Investment Technology"]
 ---
+
+<style>
+img {
+  max-height: 60vh !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+figcaption {
+  text-align: center !important;
+  font-style: italic !important;
+  color: #666 !important;
+  margin: 0.5rem auto 1.5rem auto !important;
+  font-size: 0.9rem !important;
+}
+</style>
+
+
+<style>
+img {
+  max-height: 60vh !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+figcaption {
+  text-align: center !important;
+  font-style: italic !important;
+  color: #666 !important;
+  margin: 0.5rem auto 1.5rem auto !important;
+  font-size: 0.9rem !important;
+}
+</style>
+
 
 # The Problem Every Investor Faces
 
@@ -126,6 +194,40 @@ InvestMuse isn't just another investment tool—it's a complete analytical ecosy
 **Ready to experience investment analysis as it should be?** [Start your journey with InvestMuse](https://investmuse.io) and discover how technology can enhance your investment decision-making process.
 
 ---
+
+<style>
+img {
+  max-height: 60vh !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+figcaption {
+  text-align: center !important;
+  font-style: italic !important;
+  color: #666 !important;
+  margin: 0.5rem auto 1.5rem auto !important;
+  font-size: 0.9rem !important;
+}
+</style>
+
+
+<style>
+img {
+  max-height: 60vh !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+figcaption {
+  text-align: center !important;
+  font-style: italic !important;
+  color: #666 !important;
+  margin: 0.5rem auto 1.5rem auto !important;
+  font-size: 0.9rem !important;
+}
+</style>
+
 
 *InvestMuse: Where institutional-grade analysis meets intuitive design, empowering every investor with the tools to make confident, data-driven investment decisions.*
 
