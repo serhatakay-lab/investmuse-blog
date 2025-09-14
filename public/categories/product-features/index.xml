@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Product Features on InvestMuse Blog</title>
-    <link>http://localhost:8080/categories/product-features/</link>
+    <link>http://localhost:1313/blog/categories/product-features/</link>
     <description>Recent content in Product Features on InvestMuse Blog</description>
-    <generator>Hugo -- 0.149.0</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Sep 2025 10:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8080/categories/product-features/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/categories/product-features/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How InvestMuse Transforms Investment Analysis: From Daily Hot Picks to AI-Powered Financial Insights</title>
-      <link>http://localhost:8080/posts/introducing-investmuse/</link>
+      <link>http://localhost:1313/blog/posts/introducing-investmuse/</link>
       <pubDate>Thu, 04 Sep 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:8080/posts/introducing-investmuse/</guid>
-      <description>The story of how cutting-edge technology meets investment intelligence to democratize institutional-grade analysis</description>
+      <guid>http://localhost:1313/blog/posts/introducing-investmuse/</guid>
+      <description>&lt;h1 id=&#34;the-problem-every-investor-faces&#34;&gt;The Problem Every Investor Faces&lt;/h1&gt;&#xA;&lt;p&gt;Sarah, a marketing manager with a growing investment portfolio, starts her day like millions of other investors worldwide. She opens her laptop, checks the market, and immediately feels overwhelmed. TradingView shows her charts, but interpreting the technical indicators requires expertise she doesn&amp;rsquo;t have. Financial news websites flood her with conflicting opinions. Yahoo Finance displays basic numbers, but connecting the dots between a company&amp;rsquo;s financial health and its investment potential feels like solving a puzzle with missing pieces.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

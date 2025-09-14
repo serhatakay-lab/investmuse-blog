@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:8080/</loc>
+    <loc>http://localhost:1313/blog/tags/ai/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/tags/ai/</loc>
+    <loc>http://localhost:1313/blog/tags/analysis/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/tags/analysis/</loc>
+    <loc>http://localhost:1313/blog/categories/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/categories/</loc>
+    <loc>http://localhost:1313/blog/tags/fintech/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/tags/fintech/</loc>
+    <loc>http://localhost:1313/blog/posts/introducing-investmuse/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/posts/introducing-investmuse/</loc>
+    <loc>http://localhost:1313/blog/tags/investing/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/tags/investing/</loc>
+    <loc>http://localhost:1313/blog/categories/investment-technology/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/categories/investment-technology/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/posts/</loc>
+    <loc>http://localhost:1313/blog/posts/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/categories/product-features/</loc>
+    <loc>http://localhost:1313/blog/categories/product-features/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/tags/</loc>
+    <loc>http://localhost:1313/blog/tags/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8080/tags/technical-analysis/</loc>
+    <loc>http://localhost:1313/blog/tags/technical-analysis/</loc>
     <lastmod>2025-09-04T10:00:00+00:00</lastmod>
   </url>
 </urlset>
