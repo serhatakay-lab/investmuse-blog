@@ -191,3 +191,4 @@ This model provides a simplified method for identifying market regimes, allowing
 ---
 
 *This analysis demonstrates how mathematical models originally developed for analyzing poetry can be applied to modern financial markets, revealing hidden patterns that guide investment decisions.*
+<!-- Force rebuild -->
