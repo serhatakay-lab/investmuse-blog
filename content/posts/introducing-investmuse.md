@@ -1,26 +1,5 @@
 ---
 
-<style>
-img {
-  max-height: 60vh !important;
-  width: auto !important;
-  max-width: 100% !important;
-  object-fit: contain !important;
-  display: block !important;
-  margin: 0 auto !important;
-}
-figcaption {
-  text-align: center !important;
-  font-style: italic !important;
-  color: #666 !important;
-  margin: 0.5rem auto 1.5rem auto !important;
-  font-size: 0.9rem !important;
-}
-</style>
-
-
-
-
 title: "How InvestMuse Transforms Investment Analysis: From Daily Hot Picks to AI-Powered Financial Insights"
 date: 2025-09-04T10:00:00Z
 draft: false
