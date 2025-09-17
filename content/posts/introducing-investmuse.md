@@ -5,7 +5,7 @@ date: 2025-09-04T10:00:00Z
 draft: false
 description: "The story of how cutting-edge technology meets investment intelligence to democratize institutional-grade analysis"
 image: "images/advanced-technical-analysis.png"
-summary: "Discover how InvestMuse transforms investment analysis with AI-powered insights, daily market opportunities, and institutional-grade tools for everyday investors."
+summary: '<img src=""images/advanced-technical-analysis.png"" style="width:200px;float:left;margin:0 1rem 1rem 0;">Discover how InvestMuse transforms investment analysis with AI-powered insights...'
 tags: ["investing", "AI", "analysis", "fintech", "technical-analysis"]
 categories: ["Product Features", "Investment Technology"]
 ---
