@@ -3,6 +3,7 @@ title: "A Hidden Markov Model Analysis for Gold Historical Data"
 date: 2025-09-15T10:00:00Z
 draft: false
 description: "Deep dive into gold price patterns using Hidden Markov Models to identify market regimes and trading opportunities through mathematical analysis"
+image: "/images/gold-price-hidden-regimes.png"
 tags: ["gold", "hidden-markov-models", "quantitative-analysis", "trading", "technical-analysis", "R", "time-series"]
 categories: ["Quantitative Analysis", "Market Research"]
 ---
